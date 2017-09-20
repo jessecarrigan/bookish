@@ -9,9 +9,9 @@ angular.module('Bookish', [
     ];
 
     $scope.categories = [
-        { "id": 1, "category": "Computer Science"},
-        { "id": 2, "category": "Linux" },
-        { "id": 3, "category": "Software Development"}
+        { "id": 1, "name": "Computer Science"},
+        { "id": 2, "name": "Linux" },
+        { "id": 3, "name": "Software Development"}
     ];
 
     $scope.currentCategory = null;
