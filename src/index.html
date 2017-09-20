@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="Bookish">
   <head>
   </head>
-  <body>
-      <div ng-init="hello='world'">
-          <h1>{{hello}}</h1>
-          <input type="text" ng-model="hello" />
+  <body ng-controller="MainCtrl">
+      <div>
+          <h1>Books</h1>
+          <ul>
+              <li ng-repeat="book in books">{{ book.title }}</li>
+          </ul>
       </div>
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+      <script src="app/bookish.js"></script>
   </body>
 </html>
